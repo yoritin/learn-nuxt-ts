@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
       <h1 class="title">
         learn-nuxt-ts
       </h1>
@@ -30,7 +29,11 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  mounted(): void {
+    console.log(this)
+  },
+})
 </script>
 
 <style>
